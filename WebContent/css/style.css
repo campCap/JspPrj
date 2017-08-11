@@ -3,7 +3,6 @@
 #header {
 	margin-top:50px;
 	height: 70px;
-	background: rgba(255,255,0,0.5);
 }
 
 .content-container {
@@ -11,29 +10,32 @@
 	height:100%;
 	min-height:inherit;	
 	width:960px;
-	background: gray;
 }
 
 #visual {
 	height: 171px;
-	background: blue;
+	background: #313131 url("../images/bg-visual.png") center;
+	border-top: solid 3px #8cba34;
 }
+	#visual .content-container{
+		background: #313131 url("../images/customer/visual.png") no-repeat center;
+	}
+
 /* -------보디 스타일 왕자굳------------------------------------ */
 #body {
+	border-top: solid 5px #8cba34;
+	margin-top:1px;
 	min-height: 300px;
-	background: green;
 }
 	#aside {
 		float: left;
 		min-height: inherit;
 		width: 205px;
-		background: rgb(0,123,123);
 	}
 	#main {
 		float: left;
 		min-height: inherit;
 		width:755px;
-		background: rgb(40,40,40);
 	}
 	/* 매인의 막내동생 */
 	#body::after {
@@ -45,15 +47,22 @@
 /* --------------footer style-------------------------- */	
 #footer {
 	height: 100px;
-	background: black;
+	background: #313131;
 }
 #floating{
 	position: fixed;
 	width:100%;
 	height: 50px;
-	background: olive;
+	background: lime;
 	left: 0px;
-	top: 0px
+	top: 0px 
 }
-
+	#floating div{
+		position: absolute;
+		height: 60px;
+		width: 60px;
+		background: fuchsia;
+		top: 10px;
+		left: 10px
+	}
 
