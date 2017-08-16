@@ -1,9 +1,28 @@
 @charset "UTF-8";
 
+.hidden{
+	/* visibility:hidden; */
+	display: none;
+}
+
+.clearfix::after {
+    content: "come on";
+    clear: both;
+    display: table;
+}
+/* ------------------------------ */
 #header {
 	margin-top:50px;
 	height: 70px;
 }
+
+	#main-menu{
+	}
+		
+		#main-menu li{
+		/* 	display: inline-block; */
+			float: left;
+		}
 
 .content-container {
 	margin: auto;
@@ -27,22 +46,26 @@
 	margin-top:1px;
 	min-height: 300px;
 }
+	#body .content-container{
+  	 background:url("../images/bg-body.png")repeat-y left;
+	}
 	#aside {
 		float: left;
 		min-height: inherit;
 		width: 205px;
+		background:url("../images/bg-aside-title.png") no-repeat left top;
+		
 	}
 	#main {
-		float: left;
 		min-height: inherit;
+		float: left;
+		padding-left:35px;
+		padding-top:45px;
 		width:755px;
+		box-sizing: border-box;
 	}
 	/* 매인의 막내동생 */
-	#body::after {
-    content: "come on";
-    clear: both;
-    display: table;
-}
+
 
 /* --------------footer style-------------------------- */	
 #footer {
@@ -62,7 +85,7 @@
 		height: 60px;
 		width: 60px;
 		background: fuchsia;
-		top: 10px;
-		left: 10px
+		/* top: 10px;
+		left: 10px */
 	}
 
