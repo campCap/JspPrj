@@ -6,23 +6,10 @@
 }
 
 .clearfix::after {
-    content: "come on";
+    content: "";
     clear: both;
-    display: table;
+    display: block;
 }
-/* ------------------------------ */
-#header {
-	margin-top:50px;
-	height: 70px;
-}
-
-	#main-menu{
-	}
-		
-		#main-menu li{
-		/* 	display: inline-block; */
-			float: left;
-		}
 
 .content-container {
 	margin: auto;
@@ -30,6 +17,32 @@
 	min-height:inherit;	
 	width:960px;
 }
+
+/* ------------------------------ */
+#header {
+	/* margin-top:50px; */
+	height: 70px;
+}
+	#main-menu{
+		border: 1px solid blue;
+		display: inline-block;
+	}
+	
+		#main-menu ul{
+			border: 1px solid red;
+			overflow:auto;
+		}
+		
+			#main-menu li{
+				float: left;
+				padding-left: 24px;
+				background: url("../images/bg-main-menu-vsp.png") no-repeat 13px center;
+			}
+			#main-menu li:first-child{
+				padding-left: 0px;
+				background: none;
+			}
+
 
 #visual {
 	height: 171px;
