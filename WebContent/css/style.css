@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+a{
+	color: #979797;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+/* -----------------------reset----- */
 .hidden{
 	/* visibility:hidden; */
 	display: none;
@@ -18,18 +27,22 @@
 	width:960px;
 }
 
+body{
+	font-family:돋음, Arial, sans-serif;
+	font-size: 11px;
+	color:#979797;
+}
+
 /* ------------------------------ */
 #header {
 	/* margin-top:50px; */
 	height: 70px;
 }
 	#main-menu{
-		border: 1px solid blue;
 		display: inline-block;
 	}
 	
 		#main-menu ul{
-			border: 1px solid red;
 			overflow:auto;
 		}
 		
@@ -42,7 +55,17 @@
 				padding-left: 0px;
 				background: none;
 			}
-
+			/* 막내 li의 a태그 */
+			#main-menu li:last-child a{
+				color: #ff6a00;
+			}
+			
+			#main-menu a{
+				font-family: 맑은 고딕 sans-serif;
+				font-size: 15px;
+				font-weight: bold;
+				color: #000000;
+			}
 
 #visual {
 	height: 171px;
