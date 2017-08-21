@@ -4,9 +4,7 @@ a{
 	color: #979797;
 	text-decoration: none;
 }
-a:hover{
-	text-decoration: underline;
-}
+
 
 /* -----------------------reset----- */
 .hidden{
@@ -20,6 +18,10 @@ a:hover{
     display: block;
 }
 
+a:hover{
+	text-decoration: underline;
+}
+
 .content-container {
 	margin: auto;
 	height:100%;
@@ -31,6 +33,38 @@ body{
 	font-family:돋음, Arial, sans-serif;
 	font-size: 11px;
 	color:#979797;
+}
+
+#search-form input[type="submit"]{
+	width: 31px;
+	height: 25px;
+	border: 0px;
+	text-indent: -999px;/* 왼쪽으로 밈 (들여쓰기) */
+	background: url("../images/btn-zoom.png");
+	border-left:  1px solid #8CBA34;
+	cursor: pointer;
+}
+
+#main a{
+	width: 64px;
+	height: 23px;
+	border: 2px solid aqua;
+	text-indent: -99px;/* 왼쪽으로 밈 (들여쓰기) */
+	background: url("../images/btn-cancel.png");
+	display: inline-block;
+	overflow: hidden;
+}
+
+.btn{
+	
+}
+
+.btn-search{
+	
+}
+
+.btn-cancel{
+	
 }
 
 /* ------------------------------ */
@@ -51,6 +85,7 @@ body{
 				padding-left: 24px;
 				background: url("../images/bg-main-menu-vsp.png") no-repeat 13px center;
 			}
+			/* li부모의 첫번째 자식 태그 */
 			#main-menu li:first-child{
 				padding-left: 0px;
 				background: none;
@@ -66,7 +101,7 @@ body{
 				font-weight: bold;
 				color: #000000;
 			}
-
+			
 #visual {
 	height: 171px;
 	background: #313131 url("../images/bg-visual.png") center;
