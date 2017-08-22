@@ -35,37 +35,59 @@ body{
 	color:#979797;
 }
 
-#search-form input[type="submit"]{
-	width: 31px;
-	height: 25px;
-	border: 0px;
-	text-indent: -999px;/* 왼쪽으로 밈 (들여쓰기) */
-	background: url("../images/btn-zoom.png");
-	border-left:  1px solid #8CBA34;
-	cursor: pointer;
-}
-
-#main a{
-	width: 64px;
-	height: 23px;
-	border: 2px solid aqua;
-	text-indent: -99px;/* 왼쪽으로 밈 (들여쓰기) */
-	background: url("../images/btn-cancel.png");
-	display: inline-block;
-	overflow: hidden;
-}
 
 .btn{
+	display: inline-block;
+	border: 0px;
+	cursor: pointer;
+	overflow: hidden;
 	
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	
+	padding: 3px 8px;
+	color: white;
+	font-weight: bold;
 }
 
-.btn-search{
+.btn-img{
+	display: inline-block;
+	border: 0px;
+	text-indent: -999px;/* 왼쪽으로 밈 (들여쓰기) */
+	cursor: pointer;
+	overflow: hidden;
 	
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	text-indent: -999px;/* 왼쪽으로 밈 (들여쓰기) */	
 }
 
-.btn-cancel{
-	
+.btn-default{
+	background-color: #759d2a;
+	border-color: #608618;
 }
+
+	.btn-default:hover{
+		text-decoration:none;
+		background:-webkit-gradient(radial, 171 104, 0, 220 -42, 280, from(#000000), to(#0029FF));
+		border-color: #608618;
+	}
+
+
+	.btn-search{
+		width: 31px;
+		height: 25px;
+		border-left:  1px solid #8CBA34;
+		background: url("../images/btn-zoom.png") no-repeat;
+	}
+	
+	.btn-cancel{
+		width: 64px;
+		height: 23px;
+		background: url("../images/btn-cancel.png");
+	}
 
 /* ------------------------------ */
 #header {
