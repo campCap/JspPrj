@@ -36,6 +36,7 @@ body{
 }
 
 
+/* ---------------------------------------------------- */
 .btn{
 	display: inline-block;
 	border: 0px;
@@ -88,42 +89,59 @@ body{
 		height: 23px;
 		background: url("../images/btn-cancel.png");
 	}
+/* --------------hr-list------------------------------ */
 
-/* ------------------------------ */
-#header {
-	/* margin-top:50px; */
-	height: 70px;
-}
-	#main-menu{
+.hr-list{
 		display: inline-block;
 	}
 	
-		#main-menu ul{
-			overflow:auto;
+	.hr-list ul{
+		overflow:auto;
+	}
+	
+		.hr-list li{
+			float: left;
 		}
+		/* li부모의 첫번째 자식 태그 */
+		.hr-list li:first-child{
+			padding-left: 0px;
+			background: none;
+		}
+			
+/* ------------------------------ */
+#header {
+	height: 70px;
+}
+
+.main-menu li{
+	padding-left: 24px;
+	background: url("../images/bg-main-menu-vsp.png") no-repeat 13px center;
+}
+			
+	.main-menu li:last-child a{
+		color: #ff6a00;
+	}
+	
+	.main-menu a{
+		font-family: 맑은 고딕, sans-serif;
+		font-size: 15px;
+		font-weight: bold;
+		color: #000000;
+	}
+
+	.member-menu li{
+		padding-left: 9px;
+		background: url("../images/bg-member-menu-sp.png") no-repeat 5px center;
+	}
+	
+	.member-menu a{
+		font-family: 맑은 고딕, 고딕, sans-serif;
+		font-size: 10px;
+		font-weight: bold;
+		color: #979797;
+	}
 		
-			#main-menu li{
-				float: left;
-				padding-left: 24px;
-				background: url("../images/bg-main-menu-vsp.png") no-repeat 13px center;
-			}
-			/* li부모의 첫번째 자식 태그 */
-			#main-menu li:first-child{
-				padding-left: 0px;
-				background: none;
-			}
-			/* 막내 li의 a태그 */
-			#main-menu li:last-child a{
-				color: #ff6a00;
-			}
-			
-			#main-menu a{
-				font-family: 맑은 고딕 sans-serif;
-				font-size: 15px;
-				font-weight: bold;
-				color: #000000;
-			}
-			
+		
 #visual {
 	height: 171px;
 	background: #313131 url("../images/bg-visual.png") center;
