@@ -61,7 +61,7 @@ body{
 	
 	background-image: none;
 	border: 1px solid transparent;
-	border-radius: 4px;
+	/* border-radius: 4px; */
 	text-indent: -999px;/* 왼쪽으로 밈 (들여쓰기) */	
 }
 
@@ -80,6 +80,7 @@ body{
 	.btn-search{
 		width: 31px;
 		height: 25px;
+		border:0px;
 		border-left:  1px solid #8CBA34;
 		background: url("../images/btn-zoom.png") no-repeat;
 	}
@@ -109,9 +110,32 @@ body{
 		}
 			
 /* ------------------------------ */
-#header {
+#header{
 	height: 70px;
 }
+
+#header .content-container{
+	position:relative;
+}
+
+#header section >*,
+#logo{
+	position: absolute;
+}
+
+	#logo{
+		display: inline-block;
+		top: 23px;
+		vertical-align: baseline;
+		font-size:0px;
+		background-color: red;
+	}
+
+#main-menu{
+	top: 27px;
+	left: 200px;
+}
+
 
 .main-menu li{
 	padding-left: 24px;
@@ -128,6 +152,22 @@ body{
 		font-weight: bold;
 		color: #000000;
 	}
+/* -------------------------------- */
+
+#search-form{
+	width: 308px;
+	height: 25px;
+	border: 5px solid #8cba34;
+	top: 21px;
+	left: 468px;
+}
+/* --------------------------------- */
+
+#member-menu{
+	top: 20px;
+	right: 0px;
+		
+}
 
 	.member-menu li{
 		padding-left: 9px;
@@ -140,6 +180,12 @@ body{
 		font-weight: bold;
 		color: #979797;
 	}
+
+#customer-menu{
+	right:0px;
+	top: 40px;
+}
+
 		
 		
 #visual {
